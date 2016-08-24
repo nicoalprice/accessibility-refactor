@@ -1,16 +1,30 @@
 /* Tour page styles */
 
-pre {
-  font-family: 'Open Sans', sans-serif;
+h1 {
+	display: inline-block;
+	margin: 0;
 }
 
-.heading{
-  display: inline-block;
-  margin: 0;
+.pick {
+	width: 40px;
+	height: 0%;
+	padding: 10px;
 }
 
-.pick{
-  width: 40px;
-  height: 0%;
-  padding: 10px;
+/* Table Styles */
+table {
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+th {
+	font-weight: 800;
+}
+
+th, td {
+	padding: 10px;
+}
+
+caption {
+	visibility: hidden;
 }

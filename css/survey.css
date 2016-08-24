@@ -1,6 +1,6 @@
 /* Survey page styles */
 
-.photo{
+.photo {
   width: 60%;
   padding: 10px;
 }
@@ -11,10 +11,10 @@ form {
   display: inline-block;
 }
 
-.container{
+.container {
   text-align: center;
 }
-.newsletter{
+.newsletter {
   text-align: right;
 
 }
@@ -23,6 +23,6 @@ form {
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
   .photo{
-    width: 40%;
+	width: 40%;
   }
 }
