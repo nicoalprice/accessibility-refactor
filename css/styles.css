@@ -20,24 +20,10 @@ a {
 }
 
 a:hover {
-  color: #999;
+  color: #fff;
 }
 
-/* Section Styles */
-
-h1.band-name {
-	color: purple;
-	text-transform: uppercase;
-	font-size: 4em;
-	margin-top: 74px;
-}
-
-.slogan {
-	color: green;
-	font-size: 2em;
-	font-weight:600;
-	margin-top: -14px;
-}
+/* ----- Section Styles ----- */
 
 h1 {
   font-size: 2em;
@@ -45,6 +31,8 @@ h1 {
   color: #781125;
   margin-top: 10px;
 }
+
+/* Navigation Menu */
 
 .main-nav {
   width: 100%;
@@ -83,6 +71,8 @@ h1 {
   color: white
 }
 
+/* Header */
+
 header {
   text-align: center;
   background: url('../img/concert02_no_text.jpg') no-repeat top center ;
@@ -91,6 +81,21 @@ header {
   padding-top: 60px;
   height: 350px;
 }
+
+h1.band-name {
+	color: purple;
+	text-transform: uppercase;
+	font-size: 4em;
+	margin-top: 74px;
+}
+
+.slogan {
+	color: green;
+	font-size: 2em;
+	font-weight:600;
+	margin-top: -14px;
+}
+
 
 .tag {
   color: black;
@@ -133,11 +138,9 @@ header .name{
 .information {
   width: 100%;
   text-align: center;
-  /*display: inline-block;
-  position: absolute;*/
 }
 
-/* Footer styles */
+/* ----- Footer Styles ----- */
 
 footer {
   width: 100%;
