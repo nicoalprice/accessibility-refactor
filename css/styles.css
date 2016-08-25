@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #6AD4B1;
-  background: #2d2b30;
+  background: #ffffff;
 }
 
 /* Link Styles */
@@ -17,10 +17,11 @@ body {
 a {
   text-decoration: none;
   color: #999;
+	color: #ffd8b7;
 }
 
 a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 /* ----- Section Styles ----- */
@@ -28,7 +29,7 @@ a:hover {
 h1 {
   font-size: 2em;
   text-transform: uppercase;
-  color: #ff0000;
+  color: #781125;
   margin-top: 10px;
 }
 
@@ -74,25 +75,28 @@ h1 {
 /* Header */
 
 header {
-  text-align: center;
-  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
-  height: 350px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+	background-size: cover;
+	overflow: hidden;
+	padding-top: 60px;
+	height: 350px;
+/*	border-bottom: 2px solid #333333;*/
+	box-shadow: 0 4px 12px  #333333;
 }
 
 h1.band-name {
-	color: purple;
+	color: #333333;
 	text-transform: uppercase;
 	font-size: 4em;
 	margin-top: 74px;
 }
 
 .slogan {
-	color: green;
+	color: #781125;
 	font-size: 2em;
-	font-weight:600;
+	font-weight:400;
 	margin-top: -14px;
 }
 
@@ -124,11 +128,13 @@ header .name{
   border-top: 4px solid #781125;
   clear: both;
 }
+/* REMOVED HOVER COLOR CHANGE SINCE IT'S VISUALLY CONFUSING
 .card:hover {
   border-color: #96731A;
 }
+*/
 
-.photo{
+.photo {
   display: block;
   width: 200px;
   height: 0%;

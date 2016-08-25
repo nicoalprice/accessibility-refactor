@@ -12,15 +12,17 @@ form {
 }
 
 legend {
-
+	font-weight: 800;
 }
 
 fieldset {
 	border: 0;
 }
 
-input:focus {
-	outline: 1px solid blue;
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 2px solid lightblue;
 }
 
 .container {
@@ -31,7 +33,6 @@ input:focus {
   text-align: right;
 
 }
-
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
