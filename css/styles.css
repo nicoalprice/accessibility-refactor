@@ -3,25 +3,32 @@
   box-sizing: border-box;
 }
 
+*:focus {
+	outline: none;
+}
+
 body {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #6AD4B1;
+  color: #3A6355;
   background: #ffffff;
 }
 
 /* Link Styles */
 
 a {
-  text-decoration: none;
-  color: #999;
+	text-decoration: none;
 	color: #ffd8b7;
 }
 
 a:hover {
   color: #ffffff;
+}
+
+a:focus {
+
 }
 
 /* ----- Section Styles ----- */
@@ -72,6 +79,11 @@ h1 {
   color: white
 }
 
+.nav a:focus {
+	color: white;
+	border: 2px solid navy;
+}
+
 /* Header */
 
 header {
@@ -82,7 +94,6 @@ header {
 	overflow: hidden;
 	padding-top: 60px;
 	height: 350px;
-/*	border-bottom: 2px solid #333333;*/
 	box-shadow: 0 4px 12px  #333333;
 }
 
@@ -114,6 +125,7 @@ h1.band-name {
 header .name{
   font-size: 3em;
 }
+
 .tagline {
   font-weight: 600;
   padding: 20px;
@@ -170,13 +182,15 @@ footer ul li {
 }
 
 a.social {
-  display: inline-block;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
+	display: inline-block;
+	margin-left: 5px;
+	width: 30px;
+	height: 30px;
+	background-size: 30px 30px;
+	opacity: .4;
+	transition: all .5s;
+	background: black;
+	border-radius: 3px;
 }
 
 a.twitter {
@@ -191,8 +205,10 @@ a.spotify {
   background-image: url(../img/spotify-32.png);
 }
 
-a.social:hover {
-  opacity: 1;
+a.social:hover,
+a.social:focus {
+	opacity: 1;
+	transform: scale(1.1);
 }
 .clearfix {
   clear: both;

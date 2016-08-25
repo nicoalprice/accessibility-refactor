@@ -21,8 +21,9 @@ fieldset {
 
 input:focus,
 select:focus,
-textarea:focus {
-	outline: 2px solid lightblue;
+textarea:focus,
+button:focus {
+	outline: 2px solid navy;
 }
 
 .container {
