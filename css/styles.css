@@ -90,26 +90,48 @@ h1 {
 header {
 	font-family: 'Montserrat', sans-serif;
 	text-align: center;
-	background: url('../img/concert02_no_text.jpg') no-repeat top center ;
-	background-size: cover;
 	overflow: hidden;
 	padding-top: 60px;
-	height: 350px;
+	min-height: 350px;
 	box-shadow: 0 4px 12px  #333333;
+	display: block;
+	position: relative;
+}
+
+/* Added pseudo-element in order to reduce the opacity of the background image for better contrast. */
+header:after {
+	content: "";
+	background: url('../img/concert02_no_text.jpg') no-repeat top center;
+	background-size: cover;
+	opacity: .6;
+	position: absolute;
+	padding-top: 60px;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
 }
 
 h1.band-name {
 	color: #333333;
+	text-align: center;
 	text-transform: uppercase;
-	font-size: 4em;
+	font-size: 2em;
+	margin: auto;
 	margin-top: 74px;
+	max-width: 90%;
+	padding: 0;
 }
 
 .slogan {
 	color: #781125;
-	font-size: 2em;
-	font-weight:400;
-	margin-top: -14px;
+	font-size: 1.25em;
+	font-weight: 400;
+	margin: auto;
+	margin-top: 30px;
+	max-width: 70%;
 }
 
 .tag {
@@ -215,6 +237,17 @@ a.social:focus {
 }
 
 /* Styles for larger screens */
+
+@media screen and (min-width: 350px) {
+	h1.band-name {
+		font-size: 3em;
+	}
+
+	.slogan {
+		font-size: 1.5em;
+	}
+
+}
 @media screen and (min-width: 840px) {
 
   .flex {
@@ -227,6 +260,15 @@ a.social:focus {
   header {
 	min-height: 470px;
   }
+
+	h1.band-name {
+		font-size: 4em;
+		max-width: 90%;
+	}
+
+	.slogan {
+		font-size: 2em;
+	}
 
   .nav {
 	max-width: 1200px;
