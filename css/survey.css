@@ -26,6 +26,12 @@ button:focus {
 	outline: 2px solid navy;
 }
 
+button {
+/*	width: 80px;*/
+	min-height: 24px;
+	font-size: 1em;
+}
+
 .container {
   text-align: center;
 }

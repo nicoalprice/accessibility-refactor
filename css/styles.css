@@ -1,6 +1,7 @@
 /* Global Layout Set-up */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 1em;
 }
 
 *:focus {
@@ -8,8 +9,8 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #3A6355;
@@ -253,7 +254,7 @@ a.social:focus {
 	margin: 20px 30px;
   }
 
-  .information{
+  .information {
 	text-align: left;
   }
 
