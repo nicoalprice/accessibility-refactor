@@ -236,6 +236,7 @@ a.social:focus {
   clear: both;
 }
 
+/* ----- MEDIA QUERIES ----- */
 /* Styles for larger screens */
 
 @media screen and (min-width: 350px) {
