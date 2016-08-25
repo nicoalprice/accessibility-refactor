@@ -11,9 +11,22 @@ form {
   display: inline-block;
 }
 
+legend {
+
+}
+
+fieldset {
+	border: 0;
+}
+
+input:focus {
+	outline: 1px solid blue;
+}
+
 .container {
   text-align: center;
 }
+
 .newsletter {
   text-align: right;
 

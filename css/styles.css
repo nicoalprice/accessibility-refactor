@@ -8,7 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
+  color: #6AD4B1;
   background: #2d2b30;
 }
 
@@ -28,7 +28,7 @@ a:hover {
 h1 {
   font-size: 2em;
   text-transform: uppercase;
-  color: #781125;
+  color: #ff0000;
   margin-top: 10px;
 }
 
