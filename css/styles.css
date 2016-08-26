@@ -37,8 +37,9 @@ a.buy:hover {
 	color: blue;
 }
 
-a:focus {
-
+a.buy:focus {
+	color: blue;
+	border: 1px solid lightblue;
 }
 
 /* ----- Section Styles ----- */
