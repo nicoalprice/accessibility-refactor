@@ -30,6 +30,7 @@ a:hover {
 
 a.buy {
 	color: #771899;
+	border-bottom: 1px dotted grey;
 	font-weight: 800;
 }
 
@@ -158,6 +159,7 @@ h1.band-name {
   border-top: 4px solid #781125;
   clear: both;
 }
+
 /* REMOVED HOVER COLOR CHANGE SINCE IT'S VISUALLY CONFUSING
 .card:hover {
   border-color: #96731A;
@@ -175,6 +177,7 @@ h1.band-name {
   width: 100%;
   text-align: center;
 }
+
 
 /* ----- Footer Styles ----- */
 
@@ -209,18 +212,7 @@ a.social {
 	transition: all .5s;
 	background: black;
 	border-radius: 3px;
-}
-
-a.twitter {
-  background-image: url(../img/twitter-32.png);
-}
-
-a.youtube {
-  background-image: url(../img/youtube-32.png);
-}
-
-a.spotify {
-  background-image: url(../img/spotify-32.png);
+	margin-bottom: 0;
 }
 
 a.social:hover,
