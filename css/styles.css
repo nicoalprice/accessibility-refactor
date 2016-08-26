@@ -11,10 +11,10 @@
 body {
 	margin: 0;
 	padding: 0;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
-  background: #ffffff;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: #2f5045;
+	background: #ffffff;
 }
 
 /* Link Styles */
@@ -26,6 +26,15 @@ a {
 
 a:hover {
   color: #ffffff;
+}
+
+a.buy {
+	color: orangered;
+	font-weight: 600;
+}
+
+a.buy:hover {
+	color: blue;
 }
 
 a:focus {
@@ -140,21 +149,6 @@ h1.band-name {
   letter-spacing: 5px;
 }
 
-.name{
-  font-weight: 300;
-}
-
-header .name{
-  font-size: 3em;
-}
-
-.tagline {
-  font-weight: 600;
-  padding: 20px;
-  text-transform: uppercase;
-  color: #781125
-}
-
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -236,6 +230,12 @@ a.social:focus {
   clear: both;
 }
 
+/* ACCESSIBILITY FEATURES */
+/* Hide Hints */
+.hint {
+	visibility: hidden;
+}
+
 /* ----- MEDIA QUERIES ----- */
 /* Styles for larger screens */
 
@@ -292,7 +292,7 @@ a.social:focus {
 	max-width: 1000px;
   }
 
-  .photo{
+  .photo {
 	width: 30%;
 	margin: 20px 30px;
   }

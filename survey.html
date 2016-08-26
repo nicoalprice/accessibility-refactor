@@ -12,11 +12,11 @@
   </head>
 
   <body>
-	<nav class="main-nav">
+	<nav class="main-nav" role="navigation">
 	  <ul class="nav">
 		<li class="name"><a href="index.html">Accessible Frog</a></li>
 		<li><a href="tour.html">Tour</a></li>
-		<li><a href="#">Survey</a></li>
+		<li><a href="survey.html">Survey</a></li>
 	  </ul>
 	</nav>
 
@@ -25,26 +25,27 @@
 		<p class="slogan">we make awesome music</p>
 	</header>
 
-	<main role="form">
+	<main role="main">
 	  <h1>Survey</h1>
 	  <div class="card">
 		<div class="flex">
 		  <img class="photo" src= "img/concert01.jpg" alt="crowd at a concert">
 		  <div class="container">
-			<form class="survey">
+			<form class="survey" role=form>
 			<fieldset class="favorite-member">
-				<legend>Who is your favorite band member:</legend>
-					<input type="radio" id="john" name="res" value="John"><label for="john">John</label>
-					<input type="radio" id="hazzard" name="res" value="Hazzard"><label for="hazzard">Hazzard</label>
-				<input type="radio" id="bob" name="res" value="Bob"><label for="bob">Bob</label>
-					<input type="radio" id="sally" name="res" value="Sally"><label for="sally">Sally</label>
+				<legend id="favorite-member">Who is your favorite band member:</legend>
+					<input type="radio" id="john" name="res" value="John"><label for="john" aria-labelledby="favorite-member">John</label>
+					<input type="radio" id="hazzard" name="res" value="Hazzard"><label for="hazzard" aria-labelledby="favorite-member">Hazzard</label>
+				<input type="radio" id="bob" name="res" value="Bob"><label for="bob" aria-labelledby="favorite-member">Bob</label>
+					<input type="radio" id="sally" name="res" value="Sally"><label for="sally" aria-labelledby="favorite-member">Sally</label>
 			</fieldset>
 			<fieldset class="favorite-album">
 				<legend><label for="favorite-album">What is your favorite album:</label></legend>
 				  <select id="favorite-album" name="select">
 					<option value="1">A Day Of Old</option>
 					<option value="2">Diamond Fireworks</option>
-					<option value="3">Enjoy Your Desire</option><option value="4">Finding My Shadow</option>
+					<option value="3">Enjoy Your Desire</option>
+					<option value="4">Finding My Shadow</option>
 					<option value="5">Heroic Forever</option>
 					<option value="6">Midnight Fires</option>
 					<option value="7">Music Of My Life</option>
@@ -68,11 +69,14 @@
 			<div class="flex">
 				  <img class="photo" src= "img/the_band.jpg" alt="photo of the drummer">
 			<div class="container">
-				<form class="newsletter">
+				<form class="newsletter" aria-describedby="newsletter-hint" role="form">
+					<span id="newsletter-hint" class="hint">Enter your contact information to sign up for our newsletter.</span>
 					<p><label for="user-name">Name: </label><input type="text" id="user-name" name="textfield"></p>
 					<p><label for="email">Email: </label><input type ="email" id="email" name="textfield"></p>
-					<p><label for="retype-email">Retype Email: </label><input type ="email" id="retype-email" name="textfield"></p>
-					<button type="submit" name="submit" value="sign-up">Sign Up</button>
+					<p><label for="retype-email">Retype Email: </label><input type ="email" id="retype-email" name="textfield" aria-describedby="email-confirm-hint"></p>
+					<span id="email-confirm-hint" class="hint">Please retype your email address to confirm.</span>
+					<button type="submit" name="submit" value="sign-up" aria-describedby="submit-button-hint">Sign Up</button>
+					<span id="submit-button-hint" class="hint">Sign up for our newsletter. You can unsubscribe at any time.</span>
 				</form>
 			</div>
 		</div>
@@ -81,11 +85,11 @@
 
 	<footer>
 	  <ul>
-		<li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="twitter icon"></a></li>
-		<li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="youtube icon"></a></li>
-		<li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="spotify icon"></a></li>
+		<li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="twitter icon" title="twitter"></a></li>
+		<li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="youtube icon" title="youtube"></a></li>
+		<li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="spotify icon" title="spotify"></a></li>
 	  </ul>
-	  <p class="copyright">Copyright 2015, Accessible Frog</p>
+	  <p class="copyright" role="contentinfo">Copyright 2015, Accessible Frog</p>
 	</footer>
   </body>
 </html>

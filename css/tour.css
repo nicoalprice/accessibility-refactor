@@ -12,9 +12,9 @@ h1 {
 }
 
 /* Table Styles */
-table {
+table#tour-dates {
 	font-family: 'Open Sans', sans-serif;
-
+	margin-left: 160px;
 }
 
 th {
@@ -22,7 +22,7 @@ th {
 }
 
 th, td {
-	padding: 10px;
+	padding: 8px 10px 8px 20px;
 }
 
 caption {

@@ -12,10 +12,10 @@
   </head>
 
   <body>
-	<nav class="main-nav">
+	<nav class="main-nav" role="navigation">
 	  <ul class="nav">
 		<li class="name"><a href="index.html">Accessible Frog</a></li>
-		<li><a href="#">Tour</a></li>
+		<li><a href="tour.html">Tour</a></li>
 		<li><a href="survey.html">Survey</a></li>
 	  </ul>
 	</nav>
@@ -25,15 +25,15 @@
 		<p class="slogan">we make awesome music</p>
 	</header>
 
-	<main >
+	<main role="main">
 	  <div class="card">
 		<div class="flex">
 		<!-- The following images are decorative for this project. -->
 		<!-- Please see the project instructions for information on how to handle these. -->
 		  <img class="pick" src= "img/guitar_pick.png" alt="">
-		  <h1 class= "heading">Tour Dates</h1>
+		  <h1>Tour Dates</h1>
 		  <img class="pick" src= "img/guitar_pick.png" alt="">
-			<table>
+			<table id="tour-dates">
 				<caption>Tour Dates</caption>
 				<tr>
 					<th scope="col">Date</th>
@@ -41,37 +41,37 @@
 					<th scope="col">Location</th>
 				</tr>
 				<tr>
-					<td>Mar 10 - 12</td>
-					<td> The Warfield</td>
+					<td>March 10 - 12</td>
+					<td>The Warfield</td>
 					<td>San Francisco, CA</td>
 				</tr>
 				<tr>
-					<td>Mar 20 - 23</td>
+					<td>March 20 - 23</td>
 					<td>Pepsi Center</td>
 					<td>Denver, CO</td>
 				</tr>
 				<tr>
-					<td>Apr 2 - 4</td>
+					<td>April 2 - 4</td>
 					<td>Beacon Teatre</td>
 					<td>New York City, NY</td>
 				</tr>
 				<tr>
-					<td>Apr 10</td>
+					<td>April 10</td>
 					<td>Paramount Theatre</td>
 					<td>Seattle, WA</td>
 				</tr>
-			  </table>
+			</table>
 		</div>
 	  </div>
 	</main>
 
 	<footer>
 	  <ul>
-		<li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="twitter icon"></a></li>
-		<li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="youtube icon"></a></li>
-		<li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="spotify icon"></a></li>
+		<li><a href="#" class="social twitter"><img src= "img/twitter-32.png" alt="twitter icon" title="twitter"></a></li>
+		<li><a href="#" class="social youtube"><img src= "img/youtube-32.png" alt="youtube icon" title="youtube"></a></li>
+		<li><a href="#" class="social spotify"><img src= "img/spotify-32.png" alt="spotify icon" title="spotify"></a></li>
 	  </ul>
-	  <p class="copyright">Copyright 2015, Accessible Frog</p>
+	  <p class="copyright" role="contentinfo">Copyright 2015, Accessible Frog</p>
 	</footer>
   </body>
 </html>
