@@ -29,16 +29,16 @@ a:hover {
 }
 
 a.buy {
-	color: orangered;
-	font-weight: 600;
+	color: #771899;
+	font-weight: 800;
 }
 
 a.buy:hover {
-	color: blue;
+	color: #006000;
 }
 
 a.buy:focus {
-	color: blue;
+	color: #006000;
 	border: 1px solid lightblue;
 }
 
