@@ -48,7 +48,10 @@ button {
 
 .newsletter {
   text-align: right;
+}
 
+legend#contact-info {
+	visibility: hidden;
 }
 
 /* Styles for larger screens */
