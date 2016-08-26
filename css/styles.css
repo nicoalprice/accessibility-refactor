@@ -36,6 +36,8 @@ a.buy {
 
 a.buy:hover {
 	color: #006000;
+	transition: all .6s;
+	font-size: 1.025em;
 }
 
 a.buy:focus {
@@ -89,7 +91,8 @@ h1 {
 }
 
 .nav a:hover {
-  color: white
+	color: white;
+	font-size: 1.1em;
 }
 
 .nav a:focus {
